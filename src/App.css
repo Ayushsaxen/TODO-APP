@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 500px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header & Footer */
+.header,
+.footer {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  font-size: 1rem;
+  margin-top: 10px;
+  background: #5316d5;
+}
+
+/* Input & Button Styles */
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.input-field {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.add-button {
+  background: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.add-button:hover {
+  background: #0056b3;
+}
+
+/* To-Do List */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  flex-wrap: wrap;
+}
+
+.todo-item span {
+  flex: 1;
+  font-size: 1rem;
+}
+
+.todo-item .completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Buttons */
+.edit-button,
+.delete-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-left: 5px;
+}
+
+.edit-button {
+  background: #ffc107;
+  color: white;
+}
+
+.edit-button:hover {
+  background: #e0a800;
+}
+
+.delete-button {
+  background: #dc3545;
+  color: white;
+}
+
+.delete-button:hover {
+  background: #c82333;
+}
+
+/* 📌 Responsive Styles */
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .header,
+  .footer {
+    font-size: 1.3rem;
+  }
+
+  .input-field {
+    font-size: 0.9rem;
+  }
+
+  .add-button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .todo-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .edit-button,
+  .delete-button {
+    font-size: 0.8rem;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+  }
+}
