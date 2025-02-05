@@ -13,6 +13,11 @@ A simple, elegant, and responsive **To-Do App** built with **React and Redux**. 
 ✅ **Delete Tasks** – Remove unwanted tasks.  
 ✅ **Responsive Design** – Works perfectly on **mobile, tablet, and desktop**.  
 
+## 📷 Screenshot  
+
+![To-Do App Screenshot](public/to-do-app.png)
+
+
 ## 🛠️ Technologies Used  
 - ⚛ **React.js** – Frontend framework  
 - 🗂 **Redux** – State management  
